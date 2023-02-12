@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "colinboard.h": "c",
+        "bongo.h": "c"
+    }
+}

@@ -1,0 +1,19 @@
+#pragma once
+#define MASTER_LEFT
+#define SOFT_SERIAL_PIN D2
+/* key matrix size */
+// Rows are doubled-up
+#define MATRIX_ROWS 10
+#define MATRIX_COLS 4
+ 
+// wiring of each half
+#define MATRIX_ROW_PINS { C6,D7 , E6 ,B4,B5 }
+#define MATRIX_COL_PINS {B1,B3 , B2,B6 }
+
+#define DIODE_DIRECTION COL2ROW
+#define DEBOUNCE 5
+//#define ENCODERS_PAD_A { F4 }
+//#define ENCODERS_PAD_B { F5}
+//#define ENCODER_RESOLUTION 4
+//#define ENCODER_DIRECTION_FLIP
+#define TAP_CODE_DELAY 10

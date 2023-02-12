@@ -1,0 +1,39 @@
+#pragma once
+
+#include "quantum.h"
+#define BONGO_ENABLE
+
+enum oled_modes {
+  OLED_BONGO,
+  OLED_BONGO_MIN
+};
+
+#define LAYOUT_6x11( \
+     R0B, R0C, R0D, R0E, R0F, R10, R11, R12, R13, R14, R15, \
+     R21, R22, R23,R24, R25, R26, R27, R28, R29, R2A, R2B, \
+     R37, R38, R39, R3A,R3B, R3C, R3D, R3E, R3F, R40,R41, \
+     R4D, R4E,R4F,R50,  R51, R52, R53,R54, R55, R56, R57,\
+     R64, R65, R66, R67, R68, R69, R6A, R6B, R6C, R6D, R6E, \
+     R6F, R7A, R7B, R7C, R7D, R7E, R7F, R80, R81, R82, R83, \
+     \
+    L00, L01, L02, L03, L04, L05, L06, L07, L08, L09, L0A, \
+    L16, L17, L18, L19, L1A, L1B, L1C, L1D, L1E, L1F, L20, \
+    L2C, L2D, L2E, L2F, L30, L31, L32, L33, L34, L35, L36, \
+    L42, L43, L44, L45, L46, L47, L48, L49, L4A, L4B, L4C, \
+    L58, L59, L5A, L5B, L5C, L5D, L5E, L5F, L60, L61, L62, \
+    L6E, L6F, L70, L71, L72, L73, L74, L75, L76, L77, L78  \
+\
+) { \
+   { R0B, R0C, R0D, R0E, R0F, R10, R11, R12, R13, R14, R15}, \
+   { R21, R22, R23, R24, R25, R26, R27, R28, R29, R2A, R2B}, \
+   { R37, R38, R39, R3A, R3B, R3C, R3D, R3E, R3F, R40, R41}, \
+   { R4D, R4E, R4F, R50, R51, R52, R53, R54, R55, R56, R57}, \
+   { R64, R65, R66, R67, R68, R69, R6A, R6B, R6C, R6D, R6E}, \
+   { R6F, R7A, R7B, R7C, R7D, R7E, R7F, R80, R81, R82, R83}, \
+   { L00, L01, L02, L03, L04, L05, L06, L07, L08, L09, L0A}, \
+   { L16, L17, L18, L19, L1A, L1B, L1C, L1D, L1E, L1F, L20}, \
+   { L2C, L2D, L2E, L2F, L30, L31, L32, L33, L34, L35, L36}, \
+   { L42, L43, L44, L45, L46, L47, L48, L49, L4A, L4B, L4C}, \
+   { L58, L59, L5A, L5B, L5C, L5D, L5E, L5F, L60, L61, L62}, \
+   { L6E, L6F, L70, L71, L72, L73, L74, L75, L76, L77, L78} \
+}

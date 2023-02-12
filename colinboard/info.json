@@ -1,0 +1,39 @@
+{
+    "manufacturer": "VincentHuto",
+    "keyboard_name": "colinboard",
+    "maintainer": "VincentHuto",
+    "url": "",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "diode_direction" : "COL2ROW",
+    "build": {
+        "lto":true
+    },
+    "matrix_pins": {
+        "cols": ["GP15", "GP14", "GP13", "GP12", "GP11", "GP10", "GP9", "GP8", "GP7", "GP6", "GP5"],
+        "rows": ["GP21", "GP20", "GP19", "GP18", "GP17", "GP16"]
+
+    },
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0003",
+        "vid": "0x4357"
+    },
+    "split": {
+        "enabled": true,
+        "main": "right",
+        "soft_serial_pin": "GP1",
+        "transport": {
+            "protocol": "serial"
+        }
+    },
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "oled": true
+    }
+}

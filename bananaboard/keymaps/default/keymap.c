@@ -1,0 +1,37 @@
+#include QMK_KEYBOARD_H
+
+
+#define _QWERTY 0
+#define _FUNCTION1 1
+#define _FUNCTION2 2
+#define _FUNCTION3 3
+#define _FUNCTION4 4
+
+
+
+// Some basic macros
+
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
+	[_QWERTY] = LAYOUT_numpad_5x4(
+			KC_A,   KC_W, KC_S, KC_D, KC_LEFT,   KC_UP,   KC_DOWN,   KC_RIGHT,
+			KC_MUTE,   MO(_FUNCTION1),    MO(_FUNCTION2),   MO(_FUNCTION3)  ,  MO(_FUNCTION4)),
+
+	[_FUNCTION1] = LAYOUT_numpad_5x4(
+			KC_1, KC_2, KC_3, KC_4, KC_5,   KC_6,   KC_7,   KC_8, 
+			QK_BOOTLOADER, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+	[_FUNCTION2] = LAYOUT_numpad_5x4(
+			KC_9, KC_0, KC_PDOT, KC_PPLS, KC_PMNS, KC_PAST,   KC_PSLS,   KC_ENT, 
+			KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+	[_FUNCTION3] = LAYOUT_numpad_5x4(
+			KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,   KC_F6,   KC_F7,   KC_F8, 
+			KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+	[_FUNCTION4] = LAYOUT_numpad_5x4(
+			KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_TRNS, 
+			KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+};

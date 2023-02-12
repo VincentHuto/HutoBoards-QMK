@@ -1,0 +1,7 @@
+SERIAL_DRIVER = vendor
+
+OLED_DRIVER   = SSD1306
+OPT_DEFS += -DHAL_USE_I2C=TRUE
+WPM_ENABLE = yes
+ENCODER_ENABLE = yes
+SRC += keymap_encoder.c
